@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            width: 100%;
+            border-bottom:2px solid rgb(162, 162, 166) ;
+        }
+        header{
+            width: 80%;
+            margin: 0px auto;
+            line-height: 75px;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+        }
+        .brand-logo h2{
+            font-size: 32px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight:500;
+        }
+        .navbar ul li{
+            list-style: none;
+        }
+        .navbar form input{
+            padding: 8px 12px;
+            border: 2px solid rgb(217, 215, 212);
+            border-radius: 50px 0px 0px 50px;
+            border-right: none;
+        }
+        .navbar form button{
+            padding: 10px;
+            border: none;
+            background-color: #f50537;
+            color: white;
+            border-radius: 0px 50px 50px 0px;
+           
+        }
+        .gap-0{
+            gap: 0px;
+        }
+        .navbar form .fa-moon{
+            font-size: 24px;
+        }
+        .slider{
+            width: 100%;
+        }
+        .slider
+        {
+            height: 800px;
+            background: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/banner1.jpg')
+        }
+        .image-text{
+            text-align: center;
+            color: aliceblue;
+        }
+        .image-text h5{
+            font-size: 28px;
+            line-height: 38px;
+        }
+        .image-text h3{
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .image-text p{
+            font-size: 19px;
+        }
+        /* .overlay{
+            width: 100%;
+            height: 800px;
+            background-color: rgba(0, 0, 0, 0.189);
+            position: absolute;
+            z-index: -9;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="d-flex">
+                <div class="brand-logo">
+                    <h2>Cooking<i class="fas fa-bread-slice ms-1"></i></h2>
+                </div>
+                <div class="navbar d-flex">
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Class</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">pages</a></li>
+                        </ul>
+                    </nav>
+                    <form class="d-flex gap-0">
+                        <input type="search" name="" id="" placeholder="Enter keywords...">
+                        <button><i class="fas fa-search"></i></button>
+                        <i class="fa-regular fa-moon"></i>
+                    </form>
+                </div>
+        </header>
+    </div>
+    <div class="slider d-flex">
+        <!-- <div class="overlay"></div> -->
+        <div class="image-text">
+        <h5>Cooking is Easy</h5>
+        <h3>Passion For Cooking</h3>
+        <p>Helping You To Be Chef at Your Own House</p>
+        <button>Learn More</button>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
